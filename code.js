@@ -5,5 +5,5 @@ const helloWorld =
 }
 
 function sayHello(){
-    return ;
+    return "" ;
 }
