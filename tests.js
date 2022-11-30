@@ -21,7 +21,12 @@ describe('sayHello' , function() {
         expect(typeof sayHello()).toBe("string");
     });
     it("should return 'Hello, Jane'", function(){
-        expect(sayHello()).toBe("Hello, Jane")
+        expect(sayHello()).toBe("Hello, Jane");
     });
+    it("should return 'Hello, Alex'", function(){
+        expect(sayHello("Alex")).toBe('Hello, Alex');
+    });
+    it("")
 });
+
 

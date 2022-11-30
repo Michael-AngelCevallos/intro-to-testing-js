@@ -84,7 +84,7 @@ This entire TDD workflow is often explained as the repetition of "Red, Green, Re
     - Which tests fail? Which tests are still green?
     - Set the implementation back to `return "Hello, World!"`
 
-1. Inside of the `helloWorld` function in `code.js`, change the line `return "Hello, World!"` to `console.log("Hello, World!")`. Then refresh `report.html`.
+1. Inside of the `helloWorld` function in `code.js`, change the line `return "Hello, World!"` to `first`. Then refresh `report.html`.
     - What happens to the tests? Identify which tests stay green and which ones turn red. 
     - Why do you think that is?
     - Consider, what is the return value of a `console.log`? *hint*, it's always the same
@@ -158,7 +158,7 @@ Our next exercise is to follow the TDD workflow to develop incremental tests and
 ### Exercise #4 Add another small, simple test
 - Step 1:  In `tests.js`, assert that `sayHello("Alex")` returns `"Hello, Alex!"`. Our first test should be *super* simple and *super* small. This means that our next test should look like `expect(sayHello("Alex")).toBe("Hello, Alex!")`. 
 - Step 2: Run all tests and make sure that this newly added test is red.
-- Step 3: It's challenging not to jump to the "correct" answer already, but let's stay close to the TDD method. Write *just* enough code to green the test. This means making sure that the `sayHello` function definition inside of `code.js` takes an an input argument. If `input === "Alex"`, then we `return "Hello, Alex!"` else `return "Hello, Jane!"`. Don't get too fancy. A cornerstone of TDD is refactoring only once you have a handful of green tests, not just one or two with new inputs.
+- Step 3: It's challenging not to jump to the "correct" answer already, but let's stay close to the TDD method. Write *just* enough code to green the test. This means making sure that the `sayHello` function definition inside of `code.js` takes an input argument. If `input === "Alex"`, then we `return "Hello, Alex!"` else `return "Hello, Jane!"`. Don't get too fancy. A cornerstone of TDD is refactoring only once you have a handful of green tests, not just one or two with new inputs.
 - Step 4: Run all tests, expecting that all are now green. Does each test turn green? If so, then we can proceed. We can't refactor unless we have greened a test, even with a hard-coded implementation.
 - Step 5: If you feel the urge to refactor already, hang on! Let's add one more test!
 - Step 6: Repeat the TDD cycle, so let's add another test in the next exercise.
