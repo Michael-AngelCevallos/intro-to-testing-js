@@ -32,7 +32,13 @@ describe('sayHello' , function() {
     it("should return 'Hello, World!' ", function(){
         expect(sayHello(true)).toBe("Hello, World!")
     });
+describe("isFive", function(){
+    it('should return the number 5', function(){
+        expect(isFive()).toBe(5)
+    });
 
+
+});
 });
 
 
