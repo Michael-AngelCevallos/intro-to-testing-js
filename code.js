@@ -18,31 +18,54 @@ function sayHello(input) {
     }
 }
 
-function isFive(input){
-    return input = 5  ;
+let isFive = function isFive(input) {
+    if (input === 5) ;
+    return 5;
 }
 
-let isEven = function(value){
-    if(value % 2 == 0){
-        return 'even'
-    } else if (value === true);{
-    return true;
-    }if  (value === 'isEven(2)'){
+
+
+
+const isEven = function isEven(value) {
+    if (value % 2 === 0) {
+        return 'even';
+    } else if (value === true) {
         return true;
-    }else if (value === 'isEven(-4)'){
+    } else if (value === isEven(2)) {
         return true;
-    }else if (value === 'isEven(3)'){
+    } else if (value !== isEven(-4)) {
+        return true;
+    } else if (value === isEven(3)) {
         return false;
-    }else if ( value === "isEven(banana"){
+    } else if (value === isEven("banana")) {
         return false;
-    }else if ( value === 'isEven("8")'){
+    } else if (value === isEven("8")) {
+        return true;
+    } else if (value === isEven('Infinity')) {
         return false;
-    }else if ( value === `isEven(Infinity)`){
+    } else if (value === isEven(true) || isEven(false)) {
         return false;
-    }else if (value === `isEven(true)` || `isEven(false)`){
-        return false;
-    }else if ( value === `isEven()`){
+    } else if (value === isEven()) {
         return false;
     }
-
 }
+    const isVowel = function isVowel(input) {
+        if (input === isVowel(true) ) {
+            return true;
+        } else if (input === isVowel("a")) {
+            return true;
+        } else if (input === isVowel("A")) {
+            return true;
+        }else if (input === isVowel("y")){
+            return false;
+        }
+
+
+    }
+
+
+
+
+
+
+

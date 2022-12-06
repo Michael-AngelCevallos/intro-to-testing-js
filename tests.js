@@ -42,30 +42,50 @@ describe("isEven", function () {
     it("returns an even number", function () {
         expect(isEven(2)).toBe('even')
     });
-    it('returns a boolean, no matter what', function(){
+    it('returns a boolean, no matter what', function () {
         expect(isEven(true)).toBe(true)
     });
-    it('returns true when executed with `isEven(2)`', function(){
+    it('returns true when executed with (2)', function () {
         expect(isEven(isEven(2))).toBe(true)
     });
-    it('returns true when executed with `isEven(-4)`',function(){
+    it('returns true when executed with (-4)', function () {
         expect(isEven(isEven(-4))).toBe(true)
     });
-    it('returns false when executed with `isEven(3)`', function(){
+    it('returns false when executed with (3)', function () {
         expect(isEven(isEven(3))).toBe(true)
     });
-    it('returns false when called with `isEven("banana")`',function(){
+    it('returns false when called with ("banana")', function () {
         expect(isEven(isEven("banana"))).toBe(true)
-    });it('returns true when called with `isEven("8")`)`',function() {
+    });
+    it('returns true when called with ("8")', function () {
         expect(isEven(isEven("8"))).toBe(true)
-    });it('returns false when called with `isEven(Infinity)`)`',function() {
-        expect(isEven(isEven('Infinity'))).toBe(true)
-    });it('return false when called with a boolean input like `isEven(true)` or `isEven(false)`)`',function() {
+    });
+    it('returns false when called with ("Infinity")', function () {
+        expect(isEven(isEven("Infinity"))).toBe(true)
+    });
+    it('return false when called with a boolean input like (true)` or `isEven(false)`)', function () {
         expect(isEven(isEven(true || isEven(false)))).toBe(true)
-    });it('returns false when called without an argument like `isEven()`)`',function() {
+    });
+    it('returns false when called without an argument like `isEven()`', function () {
         expect(isEven(isEven(("")))).toBe(true)
     });
 });
+describe("isVowel" , function(){
+    it('always returns a boolean', function (){
+        expect(isVowel(isVowel("boolean"))).toBe(true)
+    });
+    it(' returns isVowel("a") true', function (){
+        expect(isVowel(isVowel("a"))).toBe(true)
+    });
+    it('returns isVowel("A") as true', function(){
+        expect(isVowel(isVowel("A"))).toBe(true)
+    });
+    it(' returns isVowel("y") as false', function(){
+        expect(isVowel(isVowel("y"))).toBe(true)
+    });
+});
+
+
 
 
 
