@@ -18,10 +18,11 @@ function sayHello(input) {
     }
 }
 
-let isFive = function isFive(input) {
-    if (input === 5) ;
+let isFive = function isFive(num) {
+    if  (num === 5);
     return 5;
 }
+
 
 
 
@@ -49,18 +50,24 @@ const isEven = function isEven(value) {
         return false;
     }
 }
-    const isVowel = function isVowel(input) {
-        if (input === isVowel(true) ) {
+       function isVowel(char) {
+        if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u'){
+        return true;
+        } else if (char === "A"){
             return true;
-        } else if (input === isVowel("a")) {
-            return true;
-        } else if (input === isVowel("A")) {
-            return true;
-        }else if (input === isVowel("y")){
+        } else if (char === "y"){
             return false;
+        }else if (char === true){
+            return true;
+        }else if (char === 4){
+            return false;
+        }else if (char === isVowel(true) || isVowel(false)){
+            return false;
+        }else if (char !== isVowel("banana")){
+            return true;
+        }else if (char === isVowel()){
+
         }
-
-
     }
 
 
